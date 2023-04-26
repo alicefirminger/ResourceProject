@@ -13,7 +13,8 @@ function Navbar() {
     <AppBar position="static">
       <Toolbar
         sx={{
-          backgroundColor: "#FCF7F1"
+          backgroundColor: "#FCF7F1",
+          boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
         }}
       >
         <Typography

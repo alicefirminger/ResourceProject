@@ -13,21 +13,31 @@ function FilterDropDown(props) {
   return (
     <Box
       bgcolor={"#FCF7F1"}
-      sx={{ height: "200px" }}
+      sx={{
+        height: "200px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
     >
       <Typography
         variant="h1"
         component="div"
-        sx={{ flexGrow: 0, fontSize: "1rem", color: "#004777" }}
+        sx={{ flexGrow: 0, fontSize: "2.5rem", color: "#004777" }}
       >
         Resources
       </Typography>
       <FormControl sx={{ mt: 2, width: 0.4 }}>
         <InputLabel id="filter-menu">Select Category</InputLabel>
         <Select
-          // labelId="filter-menu"
-          // id="filter-menu"
-          // value={""}
+          sx={{
+            borderColor: "red",
+            backgroundColor: "white",
+          }}
+          labelId="filter-menu"
+          id="filter-menu"
+          value={""}
           label="Select Category"
           onChange={(event) => makeAlert(event.target.value)}
         >
