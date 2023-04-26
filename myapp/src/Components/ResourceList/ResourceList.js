@@ -11,6 +11,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import "../Resource/Resource.js";
+import "./ResourceList.css";
 
 const Item = styled(Paper)(({ theme }) => ({
 	backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -29,11 +30,11 @@ export default function ResourceListDisplay({ resource }) {
 				columns={{ xs: 4, sm: 8, md: 12 }}
 			>
 				{resource.map((item) => (
-					<Grid item xs={2} sm={4} md={4} key={item.key}>
+					<Grid item xs={3} sm={6} md={6} key={item.key}>
 						<Item>
 							<a href={item.link}>
 								<div className="resource" key={item.key}>
-									<img src={item.imgSrc} alt={item.imgAlt} />
+									<img className="images" src={item.imgSrc} alt={item.imgAlt} />
 									<h2 className="resource-title">{item.title}</h2>
 								</div>
 							</a>
