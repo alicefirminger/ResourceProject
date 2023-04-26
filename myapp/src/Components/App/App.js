@@ -2,12 +2,13 @@ import "./App.css";
 import ResourceListDisplay from "../ResourceList/ResourceList";
 import { resource } from "../Resource/Resource";
 import React from "react";
+import Box from "@mui/material/Box";
 
 function App() {
 	return (
-	<box >
-		<ResourceListDisplay resource={resource} />
-	</box>
+		<Box>
+			<ResourceListDisplay resource={resource} />
+		</Box>
 	);
 }
 
