@@ -24,7 +24,7 @@ function App() {
           </Typography>
           <FacebookRoundedIcon sx={{ mr: 1 }} />
           <LinkedInIcon sx={{ mr: 1 }} />
-          <GitHubIcon sx={{ mr: 1 }} />
+          {/* <GitHubIcon sx={{ mr: 1 }} /> */}
         </Toolbar>
       </AppBar>
 
