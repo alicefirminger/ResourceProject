@@ -8,10 +8,17 @@
 
 import "../Resource/Resource.js";
 
-function ResourceListDisplay({ title }) {
+function ResourceListDisplay({ resource }) {
 	return (
-		<div>
-			<h1>{title}</h1>
+		<div className="resource-list">
+			{resource.map((item) => ( 
+				<a href={item.link}>
+				<div className="resource" key={item.key}>
+					<img src={item.imgSrc} alt={item.imgAlt} />
+					<h2 className="resource-title">{item.title}</h2>
+				</div>
+				</a>
+			))}
 		</div>
 	);
 }
