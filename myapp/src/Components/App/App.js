@@ -1,8 +1,9 @@
-import './App.css';
+import "./App.css";
+import ResourceListDisplay from "../ResourceList/ResourceList";
+import React from "react";
 
 function App() {
-  return (<h1>hello</h1>
-  );
+	return <ResourceListDisplay resource={resource}/>;
 }
 
 export default App;
