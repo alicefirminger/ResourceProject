@@ -22,25 +22,22 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function ResourceListDisplay({ resource }) {
 	return (
-		// <div className="resource-list">
-		// 	{resource.map((item) => (
-		// 		<a href={item.link}>
-		// 		<div className="resource" key={item.key}>
-		// 			<img src={item.imgSrc} alt={item.imgAlt} />
-		// 			<h2 className="resource-title">{item.title}</h2>
-		// 		</div>
-		// 		</a>
-		// 	))}
-		// </div>
 		<Box sx={{ flexGrow: 1 }}>
 			<Grid
 				container
 				spacing={{ xs: 2, md: 3 }}
 				columns={{ xs: 4, sm: 8, md: 12 }}
 			>
-				{resource.from(resource(11)).map((item, index) => (
-					<Grid item xs={2} sm={4} md={4} key={index}>
-						<Item>{item.title}</Item>
+				{resource.map((item) => (
+					<Grid item xs={2} sm={4} md={4} key={item.key}>
+						<Item>
+							<a href={item.link}>
+								<div className="resource" key={item.key}>
+									<img src={item.imgSrc} alt={item.imgAlt} />
+									<h2 className="resource-title">{item.title}</h2>
+								</div>
+							</a>
+						</Item>
 					</Grid>
 				))}
 			</Grid>
