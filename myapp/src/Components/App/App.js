@@ -1,7 +1,13 @@
-import './App.css';
+import React from "react";
+import "./App.css";
+import Container from "@mui/material/Container";
+import FilterDropDown from "../FilterDropdown/FilterDropDown";
 
 function App() {
-  return (<h1>hello</h1>
+  return (
+    <Container maxWidth="sm">
+      <FilterDropDown />
+    </Container>
   );
 }
 
