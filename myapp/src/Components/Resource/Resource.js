@@ -9,7 +9,7 @@ export const resource = [
 		//git topic
 		//item 1
 		key: "bdcf3dd0-e413-11ed-b5ea-0242ac120002",
-		imgSrc: "https://img.youtube.com/vi/watch?v=q1HZj40ZQrM/sddefault.jpg",
+		imgSrc: "http://img.youtube.com/vi/q1HZj40ZQrM/0.jpg",
 		imgAlt: "CSS Box Shadow Examples",
 		link: "https://www.youtube.com/watch?v=q1HZj40ZQrM",
 		title: "Game over… GitHub Copilot X announced",
@@ -64,7 +64,7 @@ export const resource = [
 		//testing topic
 		//item 6
 		key: "bdcf5b3a-e413-11ed-b5ea-0242ac120002",
-		imgSrc: "https://img.youtube.com/vi/watch?v=7dTTFW7yACQ&list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ&ab_channel=TheNetNinja/sddefault.jpg",
+		imgSrc: "http://img.youtube.com/vi/7dTTFW7yACQ&list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ&ab_channel=TheNetNinja/0.jpg",
 		imgAlt: "React Testing Library Crash Course",
 		link: "https://www.youtube.com/watch?v=7dTTFW7yACQ&list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ&ab_channel=TheNetNinja",
 		title: "React Testing Library Tutorial #1 - Introduction",
@@ -75,7 +75,7 @@ export const resource = [
 		//git topic
 		//item 7
 		key: "bdcf5c66-e413-11ed-b5ea-0242ac120002",
-		imgSrc:	"https://img.youtube.com/vi/watch?v=_Qzc0PgWEs8&ab_channel=NDCConferences/sddefault.jpg",
+		imgSrc:	"http://img.youtube.com/vi/_Qzc0PgWEs8&ab_channel=NDCConferences/0.jpg",
 		imgAlt: "Master Git From the Inside",
 		link: "https://www.youtube.com/watch?v=_Qzc0PgWEs8&ab_channel=NDCConferences",
 		title: "Nitty-Gitty: Master Git from the Inside - Manu Magalhães - NDC London 2022",
@@ -108,7 +108,7 @@ export const resource = [
 		//git topic
 		//item 10
 		key: "bdcf5fa4-e413-11ed-b5ea-0242ac120002",
-		imgSrc:	"https://img.youtube.com/vi/watch?v=eLmpKKaQL54&ab_channel=SoftwareEngineerTutorials/sddefault.jpg",
+		imgSrc:	"http://img.youtube.com/vi/eLmpKKaQL54&ab_channel=SoftwareEngineerTutorials/0.jpg",
 		imgAlt: "How To Use GitHub on VSCode",
 		link: "https://www.youtube.com/watch?v=eLmpKKaQL54&ab_channel=SoftwareEngineerTutorials",
 		title: "How To Use GitHub + VSCode: Create a Repository & Merge Changes With a Pull Request",
@@ -119,7 +119,7 @@ export const resource = [
 		//UI/UX topic
 		//item 11
 		key: "bdcf653a-e413-11ed-b5ea-0242ac120002",
-		imgSrc:	"https://img.youtube.com/vi/watch?v=C1rQQ_YpgcI&ab_channel=TheFuturAcademy/sddefault.jpg",
+		imgSrc:	"http://img.youtube.com/vi/C1rQQ_YpgcI&ab_channel=TheFuturAcademy/0.jpg",
 		imgAlt: "5 color theory tips every designer should know",
 		link: "https://www.youtube.com/watch?v=C1rQQ_YpgcI&ab_channel=TheFuturAcademy",
 		title: "How to Not Suck at Color - 5 color theory tips every designer should know",
@@ -128,5 +128,5 @@ export const resource = [
 	}
 ];
 
-// to get the thumbnail of the YouTube video - img: src="https://img.youtube.com/vi/[insert-vid-id]/sddefault.jpg"
+// to get the thumbnail of the YouTube video - img: src="https://img.youtube.com/vi/[insert-vid-id]/0.jpg"
 // where the video id is the last part of the link - https://www.youtube.com/watch?v=q1HZj40ZQrM (after the .com/)
