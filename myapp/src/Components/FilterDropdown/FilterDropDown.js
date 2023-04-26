@@ -6,9 +6,9 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
 function FilterDropDown(props) {
-  function makeAlert(value) {
-    alert(`You clicked ${value}!`);
-  }
+  // function makeAlert(value) {
+  //   alert(`You clicked ${value}!`);
+  // }
 
   return (
     <Box
@@ -39,10 +39,14 @@ function FilterDropDown(props) {
           id="filter-menu"
           value={""}
           label="Select Category"
-          onChange={(event) => makeAlert(event.target.value)}
+          onChange={props.onChange}
         >
+          <MenuItem value={"all"}>All</MenuItem>
           <MenuItem value={"css"}>CSS</MenuItem>
           <MenuItem value={"react"}>React</MenuItem>
+          <MenuItem value={"git"}>Git</MenuItem>
+          <MenuItem value={"UI/UX"}>UI/UX</MenuItem>
+          <MenuItem value={"testing"}>Testing</MenuItem>
           <MenuItem value={"javascript"}>Javascript</MenuItem>
           <MenuItem value={"mindset"}>Mindset</MenuItem>
         </Select>
