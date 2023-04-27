@@ -13,17 +13,9 @@ import ResourceListDisplay from "../ResourceList/ResourceList";
 import { resource } from "../Resource/Resource";
 import { useReducer } from "react";
 import { Typography } from "@mui/material";
+import Footer from "../Footer/Footer";
 
 function App() {
-	// function makeAlert(value) {
-	//   alert(`You clicked ${value}!`);
-	// }
-
-	// Iinitialise the resource array as a useState variable.
-	// const [resource, setResource] = useState(resource);
-	// const [filter, setFilter] = useState("");
-
-	// const resourceArray = resource;
 
 	const initialState = resource;
 	const [state, dispatch] = useReducer(reducer, initialState);
@@ -51,16 +43,17 @@ function App() {
 	}
 
 	return (
-		<Box>
-			<Navbar />
-			<FilterDropDown onChange={dispatch} />
-			<Box sx={{ bgcolor: "#004777" }}>
-				<Typography sx={{ color: "#FCF7F1", ml: "2em" }}>
-					Results {state.length}
-				</Typography>
-			</Box>
-			<ResourceListDisplay resource={state} />
-		</Box>
-	);
+    <Box>
+      <Navbar />
+      <FilterDropDown onChange={dispatch} />
+      <Box sx={{ bgcolor: "#004777" }}>
+        <Typography sx={{ color: "#FCF7F1", ml: "2em" }}>
+          Results {state.length}
+        </Typography>
+      </Box>
+      <ResourceListDisplay resource={state} />
+      <Footer />
+    </Box>
+  );
 }
 export default App;

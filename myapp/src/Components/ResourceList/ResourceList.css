@@ -3,3 +3,7 @@
 	height: 20em;
 	object-fit: cover;
 }
+
+ a:link {
+      text-decoration: none;
+}
