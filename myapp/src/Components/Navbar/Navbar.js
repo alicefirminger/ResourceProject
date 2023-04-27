@@ -21,7 +21,7 @@ function Navbar() {
 					id="nav-bar-title"
 					variant="h1"
 					component="div"
-					sx={{ flexGrow: 1, fontSize: "1rem", color: "#000000" }}
+					sx={{ flexGrow: 1, fontSize: "1rem", color: "#525252" }}
 					aria-label="Website title"
 				>
 					Bootcamper's Treasure Chest
@@ -35,7 +35,7 @@ function Navbar() {
 					alt="Facebook icon"
 				>
 					<IconButton
-						sx={{ mr: 1, color: "#000000" }}
+						sx={{ mr: 1, color: "#525252" }}
 						id="Facebook rounded icon button"
 						title="Visit School of Code Facebook page"
 						aria-label="Visit School of Code Facebook page"
@@ -52,7 +52,7 @@ function Navbar() {
 					alt="LinkedIn icon"
 				>
 					<IconButton 
-						sx={{ mr: 1, color: "#000000" }}
+						sx={{ mr: 1, color: "#525252" }}
 						id="LinkedIn rounded icon button"
 						title="Visit School of Code LinkedIn page"
 						aria-label="Visit School of Code LinkedIn page"
@@ -69,7 +69,7 @@ function Navbar() {
 					alt="GitHub icon"
 					>
 					<IconButton
-						sx={{ mr: 1, color: "#000000" }}
+						sx={{ mr: 1, color: "#525252" }}
 						id="Github rounded icon button"
 						title="Visit School of Code GitHub page"
 						aria-label="Visit School of Code Github page"
