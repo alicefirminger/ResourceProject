@@ -7,7 +7,7 @@
 //use material UI to get a grid layout for display (later)
 import * as React from "react";
 import { experimentalStyled as styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
+// import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
@@ -33,7 +33,7 @@ export default function ResourceListDisplay({ resource }) {
 				{resource.map((item) => (
 					<Grid item xs={3} sm={6} md={6} key={item.key}>
 						<Item>
-							<a href={item.link} target="_blank" rel="noreferrer">
+							<a href={item.link} target="_blank" rel="noreferrer" alt={item.linkAlt} title={item.linkAlt} aria-label={item.linkLabel}>
 								<div className="resource" key={item.key}>
 									<img className="images" src={item.imgSrc} alt={item.imgAlt} />
 									<h2 className="resource-title">{item.title}</h2>

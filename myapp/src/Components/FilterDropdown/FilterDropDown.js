@@ -12,6 +12,7 @@ function FilterDropDown(props) {
 
   return (
     <Box
+      id="filter-dropdown-menu"
       bgcolor={"#FCF7F1"}
       sx={{
         height: "200px",
@@ -22,6 +23,7 @@ function FilterDropDown(props) {
       }}
     >
       <Typography
+        id="filter-dropdown-menu-title"
         variant="h1"
         component="div"
         sx={{ flexGrow: 0, fontSize: "2.5rem", color: "#004777" }}
@@ -29,7 +31,7 @@ function FilterDropDown(props) {
         Resources
       </Typography>
       <FormControl sx={{ mt: 2, width: 0.4 }}>
-        <InputLabel id="filter-menu">Select Category</InputLabel>
+        <InputLabel id="filter-menu-label">Select Category</InputLabel>
         <Select
           sx={{
             borderColor: "red",
@@ -39,16 +41,17 @@ function FilterDropDown(props) {
           id="filter-menu"
           value={""}
           label="Select Category"
+          aria-label="Click to expand the dropdown menu to select topic"
           onChange={props.onChange}
         >
-          <MenuItem value={"all"}>All</MenuItem>
-          <MenuItem value={"css"}>CSS</MenuItem>
-          <MenuItem value={"react"}>React</MenuItem>
-          <MenuItem value={"git"}>Git</MenuItem>
-          <MenuItem value={"UI/UX"}>UI/UX</MenuItem>
-          <MenuItem value={"testing"}>Testing</MenuItem>
-          <MenuItem value={"javascript"}>Javascript</MenuItem>
-          <MenuItem value={"mindset"}>Mindset</MenuItem>
+          <MenuItem value={"all"} id="all-choice" aria-label="Select all topics">All</MenuItem>
+          <MenuItem value={"css"} id="css-choice" aria-label="Select CSS topic">CSS</MenuItem>
+          <MenuItem value={"react"} id="react-choice" aria-label="Select React topic">React</MenuItem>
+          <MenuItem value={"git"} id="git-choice" aria-label="Select Git topic">Git</MenuItem>
+          <MenuItem value={"UI/UX"} id="ui-ux-choice" aria-label="Select UI/UX topic">UI/UX</MenuItem>
+          <MenuItem value={"testing"} id="testing-choice" aria-label="Select Testing topic">Testing</MenuItem>
+          <MenuItem value={"javascript"} id="javascript-choice" aria-label="Select JavaScript topic">Javascript</MenuItem>
+          <MenuItem value={"mindset"} id="mindset-choice" aria-label="Select Mindset topic">Mindset</MenuItem>
         </Select>
       </FormControl>
     </Box>

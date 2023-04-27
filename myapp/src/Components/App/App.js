@@ -52,10 +52,10 @@ function App() {
 
 	return (
 		<Box>
-			<Navbar />
-			<FilterDropDown onChange={dispatch} />
+			<Navbar aria-label="Navigation bar" />
+			<FilterDropDown onChange={dispatch} aria-label="Filter by category dropdown menu" />
 			<Box sx={{ bgcolor: "#004777" }}>
-				<Typography sx={{ color: "#FCF7F1", ml: "2em" }}>
+				<Typography sx={{ color: "#FCF7F1", ml: "2em" }} aria-label="Number of results for chosen category">
 					Results {state.length}
 				</Typography>
 			</Box>
