@@ -8,6 +8,7 @@
 import * as React from "react";
 import { experimentalStyled as styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import "../Resource/Resource.js";
@@ -23,7 +24,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function ResourceListDisplay({ resource }) {
 	return (
-		<Box sx={{ flexGrow: 1 }}>
+		<Container maxWidth="xl" sx={{ flexGrow: 1, mt: "2em" }}>
 			<Grid
 				container
 				spacing={{ xs: 2, md: 3 }}
@@ -32,7 +33,7 @@ export default function ResourceListDisplay({ resource }) {
 				{resource.map((item) => (
 					<Grid item xs={3} sm={6} md={6} key={item.key}>
 						<Item>
-							<a href={item.link}>
+							<a href={item.link} target="_blank" rel="noreferrer">
 								<div className="resource" key={item.key}>
 									<img className="images" src={item.imgSrc} alt={item.imgAlt} />
 									<h2 className="resource-title">{item.title}</h2>
@@ -42,6 +43,6 @@ export default function ResourceListDisplay({ resource }) {
 					</Grid>
 				))}
 			</Grid>
-		</Box>
+		</Container>
 	);
 }

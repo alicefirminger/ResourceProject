@@ -25,19 +25,27 @@ function Navbar() {
 					Bootcamper's Treasure Chest
 				</Typography>
 
-				<Link href="https://www.facebook.com/schoolofcode">
+				<Link
+					href="https://www.facebook.com/schoolofcode"
+					target="_blank"
+					rel="noreferrer"
+				>
 					<IconButton sx={{ mr: 1 }}>
 						<FacebookRoundedIcon />
 					</IconButton>
 				</Link>
 
-				<Link href="https://www.linkedin.com/school/school-of-code/">
+				<Link
+					href="https://www.linkedin.com/school/school-of-code/"
+					target="_blank"
+					rel="noreferrer"
+				>
 					<IconButton sx={{ mr: 1 }}>
 						<LinkedInIcon />
 					</IconButton>
 				</Link>
 
-				<Link href="https://github.com">
+				<Link href="https://github.com" target="_blank" rel="noreferrer">
 					<IconButton sx={{ mr: 1 }}>
 						<GitHubIcon />
 					</IconButton>
