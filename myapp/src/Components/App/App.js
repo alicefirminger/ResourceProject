@@ -46,7 +46,7 @@ function App() {
 		<Box>
 			<Navbar aria-label="Navigation bar" />
 			<FilterDropDown onChange={dispatch} aria-label="Filter by category dropdown menu" />
-       <ResourceBar results={state.length} aria-label="Number of results for chosen category"> />
+       		<ResourceBar results={state.length} aria-label="Number of results for chosen category" />
 			<ResourceListDisplay resource={state} />
       <Footer />
 		</Box>
