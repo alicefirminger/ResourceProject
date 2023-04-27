@@ -15,14 +15,15 @@ import "../Resource/Resource.js";
 import "./ResourceList.css";
 
 const Item = styled(Paper)(({ theme }) => ({
-	backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-	...theme.typography.body2,
-	padding: theme.spacing(2),
-	textAlign: "center",
-	color: theme.palette.text.secondary,
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  ...theme.typography.body2,
+  padding: theme.spacing(2),
+  textAlign: "center",
+  color: theme.palette.text.secondary,
 }));
 
 export default function ResourceListDisplay({ resource }) {
+
 	return (
 		<Container maxWidth="xl" sx={{ flexGrow: 1, mt: "2em" }}>
 			<Grid
@@ -32,7 +33,7 @@ export default function ResourceListDisplay({ resource }) {
 			>
 				{resource.map((item) => (
 					<Grid item xs={3} sm={6} md={6} key={item.key}>
-						<Item>
+						<Item style={{ border: "2px solid #004777" }}>
 							<a href={item.link} target="_blank" rel="noreferrer" alt={item.linkAlt} title={item.linkAlt} aria-label={item.linkLabel}>
 								<div className="resource" key={item.key}>
 									<img className="images" src={item.imgSrc} alt={item.imgAlt} />
@@ -45,4 +46,5 @@ export default function ResourceListDisplay({ resource }) {
 			</Grid>
 		</Container>
 	);
+
 }

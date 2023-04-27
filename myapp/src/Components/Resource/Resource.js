@@ -5,6 +5,7 @@
 // Use a unique key for each object in the array (generate a UUID for each object via https://www.uuidgenerator.net/)
 
 export const resource = [
+
 	{
 		//git topic
 		//item 1
@@ -148,6 +149,7 @@ export const resource = [
 		topic: "UI/UX",
 		resourceType: "video",
 	},
+
 ];
 
 // to get the thumbnail of the YouTube video - img: src="https://img.youtube.com/vi/[insert-vid-id]/0.jpg"

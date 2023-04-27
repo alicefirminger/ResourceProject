@@ -12,18 +12,10 @@ import Box from "@mui/material/Box";
 import ResourceListDisplay from "../ResourceList/ResourceList";
 import { resource } from "../Resource/Resource";
 import { useReducer } from "react";
-import { Typography } from "@mui/material";
+import Footer from "../Footer/Footer";
+import ResourceBar from "../ResourceBar/ResourceBar.js";
 
 function App() {
-	// function makeAlert(value) {
-	//   alert(`You clicked ${value}!`);
-	// }
-
-	// Iinitialise the resource array as a useState variable.
-	// const [resource, setResource] = useState(resource);
-	// const [filter, setFilter] = useState("");
-
-	// const resourceArray = resource;
 
 	const initialState = resource;
 	const [state, dispatch] = useReducer(reducer, initialState);
@@ -54,13 +46,11 @@ function App() {
 		<Box>
 			<Navbar aria-label="Navigation bar" />
 			<FilterDropDown onChange={dispatch} aria-label="Filter by category dropdown menu" />
-			<Box sx={{ bgcolor: "#004777" }}>
-				<Typography sx={{ color: "#FCF7F1", ml: "2em" }} aria-label="Number of results for chosen category">
-					Results {state.length}
-				</Typography>
-			</Box>
+       <ResourceBar results={state.length} aria-label="Number of results for chosen category"> />
 			<ResourceListDisplay resource={state} />
+      <Footer />
 		</Box>
 	);
+
 }
 export default App;

@@ -26,12 +26,19 @@ function FilterDropDown(props) {
         id="filter-dropdown-menu-title"
         variant="h1"
         component="div"
-        sx={{ flexGrow: 0, fontSize: "2.5rem", color: "#004777" }}
+        sx={{
+          flexGrow: 0,
+          fontSize: "3rem",
+          color: "#004777",
+          fontWeight: "800",
+          letterSpacing: "0.1em",
+        }}
       >
         Resources
       </Typography>
       <FormControl sx={{ mt: 2, width: 0.4 }}>
-        <InputLabel id="filter-menu-label">Select Category</InputLabel>
+
+        <InputLabel id="filter-menu">Select Topic</InputLabel>
         <Select
           sx={{
             borderColor: "red",
@@ -39,9 +46,12 @@ function FilterDropDown(props) {
           }}
           labelId="filter-menu"
           id="filter-menu"
-          value={""}
-          label="Select Category"
+
+          value={props.value}
+          label="Select Topic"
           aria-label="Click to expand the dropdown menu to select topic"
+
+
           onChange={props.onChange}
         >
           <MenuItem value={"all"} id="all-choice" aria-label="Select all topics">All</MenuItem>
