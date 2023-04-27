@@ -15,34 +15,34 @@ import "../Resource/Resource.js";
 import "./ResourceList.css";
 
 const Item = styled(Paper)(({ theme }) => ({
-	backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-	...theme.typography.body2,
-	padding: theme.spacing(2),
-	textAlign: "center",
-	color: theme.palette.text.secondary,
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  ...theme.typography.body2,
+  padding: theme.spacing(2),
+  textAlign: "center",
+  color: theme.palette.text.secondary,
 }));
 
 export default function ResourceListDisplay({ resource }) {
-	return (
-		<Container maxWidth="xl" sx={{ flexGrow: 1, mt: "2em" }}>
-			<Grid
-				container
-				spacing={{ xs: 2, md: 3 }}
-				columns={{ xs: 4, sm: 8, md: 12 }}
-			>
-				{resource.map((item) => (
-					<Grid item xs={3} sm={6} md={6} key={item.key}>
-						<Item>
-							<a href={item.link} target="_blank" rel="noreferrer">
-								<div className="resource" key={item.key}>
-									<img className="images" src={item.imgSrc} alt={item.imgAlt} />
-									<h2 className="resource-title">{item.title}</h2>
-								</div>
-							</a>
-						</Item>
-					</Grid>
-				))}
-			</Grid>
-		</Container>
-	);
+  return (
+    <Container maxWidth="xl" sx={{ flexGrow: 1, mt: "2em" }}>
+      <Grid
+        container
+        spacing={{ xs: 2, md: 3 }}
+        columns={{ xs: 4, sm: 8, md: 12 }}
+      >
+        {resource.map((item) => (
+          <Grid item xs={3} sm={6} md={6} key={item.key}>
+            <Item style={{ border: "2px solid #004777" }}>
+              <a href={item.link} target="_blank" rel="noreferrer">
+                <div className="resource" key={item.key}>
+                  <img className="images" src={item.imgSrc} alt={item.imgAlt} />
+                  <h2 className="resource-title">{item.title}</h2>
+                </div>
+              </a>
+            </Item>
+          </Grid>
+        ))}
+      </Grid>
+    </Container>
+  );
 }

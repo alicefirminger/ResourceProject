@@ -12,8 +12,8 @@ import Box from "@mui/material/Box";
 import ResourceListDisplay from "../ResourceList/ResourceList";
 import { resource } from "../Resource/Resource";
 import { useReducer } from "react";
-import { Typography } from "@mui/material";
 import Footer from "../Footer/Footer";
+import ResourceBar from "../ResourceBar/ResourceBar.js";
 
 function App() {
 
@@ -46,11 +46,7 @@ function App() {
     <Box>
       <Navbar />
       <FilterDropDown onChange={dispatch} />
-      <Box sx={{ bgcolor: "#004777" }}>
-        <Typography sx={{ color: "#FCF7F1", ml: "2em" }}>
-          Results {state.length}
-        </Typography>
-      </Box>
+      <ResourceBar results={state.length} />
       <ResourceListDisplay resource={state} />
       <Footer />
     </Box>

@@ -16,6 +16,7 @@ function Footer() {
         height: "3em",
       }}
     >
+      {/* <img src="media/soc_logo_360.png" alt="soc logo" sx={{ mr: "0.5em" }} /> */}
       <a
         href="https://github.com/SchoolOfCode/bc14_w7_project-frontend-room-20-reactivists"
         alt="GitHub Icon"
