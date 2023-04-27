@@ -7,7 +7,7 @@
 //use material UI to get a grid layout for display (later)
 import * as React from "react";
 import { experimentalStyled as styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
+// import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
@@ -23,26 +23,28 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function ResourceListDisplay({ resource }) {
-  return (
-    <Container maxWidth="xl" sx={{ flexGrow: 1, mt: "2em" }}>
-      <Grid
-        container
-        spacing={{ xs: 2, md: 3 }}
-        columns={{ xs: 4, sm: 8, md: 12 }}
-      >
-        {resource.map((item) => (
-          <Grid item xs={3} sm={6} md={6} key={item.key}>
-            <Item style={{ border: "2px solid #004777" }}>
-              <a href={item.link} target="_blank" rel="noreferrer">
-                <div className="resource" key={item.key}>
-                  <img className="images" src={item.imgSrc} alt={item.imgAlt} />
-                  <h2 className="resource-title">{item.title}</h2>
-                </div>
-              </a>
-            </Item>
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
-  );
+
+	return (
+		<Container maxWidth="xl" sx={{ flexGrow: 1, mt: "2em" }}>
+			<Grid
+				container
+				spacing={{ xs: 2, md: 3 }}
+				columns={{ xs: 4, sm: 8, md: 12 }}
+			>
+				{resource.map((item) => (
+					<Grid item xs={3} sm={6} md={6} key={item.key}>
+						<Item style={{ border: "2px solid #004777" }}>
+							<a href={item.link} target="_blank" rel="noreferrer" alt={item.linkAlt} title={item.linkAlt} aria-label={item.linkLabel}>
+								<div className="resource" key={item.key}>
+									<img className="images" src={item.imgSrc} alt={item.imgAlt} />
+									<h2 className="resource-title">{item.title}</h2>
+								</div>
+							</a>
+						</Item>
+					</Grid>
+				))}
+			</Grid>
+		</Container>
+	);
+
 }

@@ -43,13 +43,14 @@ function App() {
 	}
 
 	return (
-    <Box>
-      <Navbar />
-      <FilterDropDown onChange={dispatch} />
-      <ResourceBar results={state.length} />
-      <ResourceListDisplay resource={state} />
+		<Box>
+			<Navbar aria-label="Navigation bar" />
+			<FilterDropDown onChange={dispatch} aria-label="Filter by category dropdown menu" />
+       <ResourceBar results={state.length} aria-label="Number of results for chosen category"> />
+			<ResourceListDisplay resource={state} />
       <Footer />
-    </Box>
-  );
+		</Box>
+	);
+
 }
 export default App;
