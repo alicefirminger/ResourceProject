@@ -43,7 +43,7 @@ function FilterDropDown(props) {
           }}
           labelId="filter-menu"
           id="filter-menu"
-          value={""}
+          value={props.value}
           label="Select Topic"
           onChange={props.onChange}
         >
