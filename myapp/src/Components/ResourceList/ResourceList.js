@@ -33,7 +33,7 @@ export default function ResourceListDisplay({ resource }) {
 			>
 				{resource.map((item) => (
 					<Grid item xs={3} sm={6} md={6} key={item.key}>
-						<Item style={{ border: "2px solid #004777" }}>
+						<Item className="resource-items" style={{ border: "2px solid #004777" }}>
 							<a href={item.link} target="_blank" rel="noreferrer" alt={item.linkAlt} title={item.linkAlt} aria-label={item.linkLabel}>
 								<div className="resource" key={item.key}>
 									<img className="images" src={item.imgSrc} alt={item.imgAlt} />
