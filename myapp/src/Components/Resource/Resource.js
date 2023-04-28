@@ -25,7 +25,7 @@ export const resource = [
 		key: "bdcf4122-e413-11ed-b5ea-0242ac120002",
 		imgSrc: "https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fgetcssscan.com%2Fcss-box-shadow-examples%2Fog-image.jpg",
 		imgAlt: "CSS Box Shadow Examples",
-		link: "https://chrome.google.com/webstore/detail/pesticide-for-chrome/bakpbgckdnepkmkeaiomhmfcnejndkbi",
+		link: "https://getcssscan.com/css-box-shadow-examples",
         linkAlt: "Link for Chrome extension for CSS Box Shadow Examples",
         linkLabel: "Link to Chrome extension for CSS Box Shadow Examples",
 		title: "Beautiful CSS Box Shadow Examples",
