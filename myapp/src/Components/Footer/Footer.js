@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+// import { Box } from "@mui/material";
 import React from "react";
 import Typography from "@mui/material/Typography";
 import logo from "./soc_logo_360.png"
@@ -43,7 +43,9 @@ function Footer() {
       <img src={logo} alt="soc logo" />
     </figure>
   </div>
-  <Typography id="footer-text">2023 - School of Code</Typography>
+  <a href="https://www.schoolofcode.co.uk/" target="_blank" rel="noreferrer" id="footer-link" aria-label="school-of-code-website-link">
+    <Typography id="footer-text">2023 - School of Code</Typography>
+  </a>
 </div>
 );
 }
