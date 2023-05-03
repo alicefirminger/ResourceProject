@@ -7,7 +7,7 @@ function ResourceBar(props) {
     <Box
       sx={{
         bgcolor: "#004777",
-        height: "6em",
+        height: "10em",
         display: "flex",
         justifyContent: "flex-start",
         alignItems: "center",
@@ -16,9 +16,9 @@ function ResourceBar(props) {
       <Typography
         sx={{
           color: "#FCF7F1",
-          ml: "2em",
-          fontWeight: "800",
-          fontSize: "1.5em",
+          ml: "1em",
+          fontWeight: "300",
+          fontSize: "2em",
         }}
       >
         {props.results} Result(s)

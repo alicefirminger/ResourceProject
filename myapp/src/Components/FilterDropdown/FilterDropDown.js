@@ -18,6 +18,7 @@ function FilterDropDown(props) {
         height: "200px",
         display: "flex",
         justifyContent: "center",
+        padding: "3rem",
         alignItems: "center",
         flexDirection: "column",
       }}
@@ -28,9 +29,9 @@ function FilterDropDown(props) {
         component="div"
         sx={{
           flexGrow: 0,
-          fontSize: "3rem",
+          fontSize: "6.5rem",
           color: "#004777",
-          fontWeight: "800",
+          fontWeight: "100",
           letterSpacing: "0.1em",
         }}
       >
@@ -41,8 +42,13 @@ function FilterDropDown(props) {
         <InputLabel id="filter-menu">Select Topic</InputLabel>
         <Select
           sx={{
-            borderColor: "red",
+            color: "#FCF7F1",
+            borderColor: "#004777",
+            fontSize: "1.2rem",
+            marginBottom: "2rem",
             backgroundColor: "white",
+            borderRadius: 4,
+            boxShadow: '0 0 0 0.2rem rgba(0,123,255,.25)',
           }}
           labelId="filter-menu"
           id="filter-menu"
