@@ -1,4 +1,4 @@
-# frontend-project
+# 1 Week Frontend Project
 
 This was a group project that offered a solution to the problem: School of Code Bootcampers want a single source where they can easily access previous learning resources and tech links.
 
