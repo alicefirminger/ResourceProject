@@ -13,6 +13,8 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import "../Resource/Resource.js";
 import "./ResourceList.css";
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -23,9 +25,12 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function ResourceListDisplay({ resource }) {
-
+	const theme = useTheme();
+	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 	return (
-		<Container maxWidth="xl" sx={{ flexGrow: 1, mt: "2em" }}>
+		<Container maxWidth="xl" 
+			sx={{ 
+			flexGrow: 1, mt: "2em", }}>
 			<Grid
 				container
 				spacing={{ xs: 2, md: 3 }}
@@ -33,7 +38,11 @@ export default function ResourceListDisplay({ resource }) {
 			>
 				{resource.map((item) => (
 					<Grid item xs={3} sm={6} md={6} key={item.key}>
-						<Item className="resource-items" style={{ border: "2px solid #004777" }}>
+						<Item className="resource-items" style={{ 
+							border: "2px solid #004777" ,
+							width: isMobile ? "80vw" : "42vw",
+							alignSelf: "center"
+						}}>
 							<a href={item.link} target="_blank" rel="noreferrer" alt={item.linkAlt} title={item.linkAlt} aria-label={item.linkLabel}>
 								<div className="resource" key={item.key}>
 									<img className="images" src={item.imgSrc} alt={item.imgAlt} />

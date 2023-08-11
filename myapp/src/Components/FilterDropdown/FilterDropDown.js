@@ -4,11 +4,16 @@ import MenuItem from "@mui/material/MenuItem";
 import InputLabel from "@mui/material/InputLabel";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
+
 
 function FilterDropDown(props) {
   // function makeAlert(value) {
   //   alert(`You clicked ${value}!`);
   // }
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <Box
@@ -29,9 +34,9 @@ function FilterDropDown(props) {
         component="div"
         sx={{
           flexGrow: 0,
-          fontSize: "6.5rem",
+          fontSize: isMobile? '3.5rem' : "6.5rem",
           color: "#004777",
-          fontWeight: "100",
+          fontWeight: "500",
           letterSpacing: "0.1em",
         }}
       >
@@ -45,6 +50,8 @@ function FilterDropDown(props) {
             color: "#FCF7F1",
             borderColor: "#004777",
             fontSize: "1.2rem",
+            width: isMobile ? "300px" : "500px",
+            alignSelf: isMobile ? "center" : "auto",
             marginBottom: "2rem",
             backgroundColor: "white",
             borderRadius: 4,

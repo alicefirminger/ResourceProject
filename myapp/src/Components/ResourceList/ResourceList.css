@@ -36,3 +36,12 @@ a:hover {
   margin: 1em;
   padding: 0;
 }
+
+@media screen and (max-width: 480px) {
+  .images {
+    width: 20em;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5em;
+  }
+}
