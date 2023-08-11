@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ResourceProject/static/css/main.a8a1060d.css",
-    "main.js": "/ResourceProject/static/js/main.0a452768.js",
+    "main.css": "/ResourceProject/static/css/main.c3c666fc.css",
+    "main.js": "/ResourceProject/static/js/main.c1a5d6c8.js",
     "static/js/787.d3befce1.chunk.js": "/ResourceProject/static/js/787.d3befce1.chunk.js",
     "static/media/soc_logo_360.png": "/ResourceProject/static/media/soc_logo_360.67ea26b1cc378fdb3296.png",
     "index.html": "/ResourceProject/index.html",
-    "main.a8a1060d.css.map": "/ResourceProject/static/css/main.a8a1060d.css.map",
-    "main.0a452768.js.map": "/ResourceProject/static/js/main.0a452768.js.map",
+    "main.c3c666fc.css.map": "/ResourceProject/static/css/main.c3c666fc.css.map",
+    "main.c1a5d6c8.js.map": "/ResourceProject/static/js/main.c1a5d6c8.js.map",
     "787.d3befce1.chunk.js.map": "/ResourceProject/static/js/787.d3befce1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8a1060d.css",
-    "static/js/main.0a452768.js"
+    "static/css/main.c3c666fc.css",
+    "static/js/main.c1a5d6c8.js"
   ]
 }
